@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Andrey Kovalenok](https://up.htmlacademy.ru/htmlcss/27/user/1123303).
-* Наставник: `Неизвестно`.
+* Студент: [Андрей Коваленок](https://up.htmlacademy.ru/htmlcss/27/user/1123303).
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/id25083).
 
 ---
 
