@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
   <body>
       <header class="header">
         <section class="header-menu">
@@ -38,9 +39,7 @@
           </div>
 
           <div>
-            <a class="checkout-button" href="#">
-              Оформить заказ
-            </a>
+            <a class="checkout-button" href="#">Оформить заказ</a>
           </div>
         </section>
 
@@ -78,6 +77,7 @@
       <main class="content">
         <section class="categories">
           <h2 class="visually-hidden">Категории</h2>
+          
           <ul class="categories-list">
             <li class="categories-item">
               <h3>Материалы</h3>
@@ -99,58 +99,60 @@
               <h3>Доставка</h3>
               <a href="#">Бесплатно</a>
             </li>
-            <li class="categories-item slider-item">
-              <p>
+          </ul>
+          <div class="slider">
+            <div class="slider-item">
+              <div>
                 <h3>Перфораторы</h3>
                 <span class="slider-text">Настоящие мужские игрушки</span>
-              </p>
-              <a href="#">Открыть каталог</a>
-            </li>
-            <li class="categories-item slider-item">
-              <p>
+              </div>
+              <a class="button" href="#">Открыть каталог</a>
+            </div>
+            <div class="slider-item active">
+              <div>
                 <h3>Дрели</h3>
                 <span class="slider-text">Соседям на радость</span>
-              </p>
-              <a href="#">Открыть каталог</a>
-            </li>
-          </ul>
+              </div>
+              <a class="button" href="#">Открыть каталог</a>
+            <div>
+          </div>
         </section>
 
         <section class="products">
-          <p class="products-inner">
-            <h2 class="products-heading">Популярные товары</h2>
-            <a class="products-button button" href="#">Все популярные товары</a>
-          </p>
+          <div class="popular-products">
+            <h2>Популярные товары:</h2>
+            <a class="button" href="#">Все популярные товары</a>
+          </div>
 
           <ul class="products-list">
             <li class="products-item">
-              <a class="products-link" href="#">
-                <h3 class="products-item-heading">Перфоратор BOSCH BFG 9000</h3>
-                <img class="products-image" src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <a href="#">
+                <h3>Перфоратор BOSCH BFG 9000</h3>
+                <img src="img/Perforator_4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
               </a>
               <p class="products-sale">32500 Р.</p>
               <a class="products-buy-button button" href="#">25 500 Р.</a>
             </li>
             <li class="products-item">
-              <a class="products-link" href='#'>
-                <h3 class="products-item-heading">Перфоратор BOSCH BFG 3000</h3>
-                <img class="products-image" src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <a href='#'>
+                <h3>Перфоратор BOSCH BFG 3000</h3>
+                <img src="img/Perforator_1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               </a>
               <p class="products-sale">22500 Р.</p>
               <a class="products-buy-button button" href="#">15 500 Р.</a>
             </li>
             <li class="products-item">
-              <a class="products-link" href='#'>
-                <h3 class="products-item-heading">Перфоратор BOSCH BFG 6000</h3>
-                <img class="products-image" src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <a href='#'>
+                <h3>Перфоратор BOSCH BFG 6000</h3>
+                <img src="img/Perforator_2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               </a>
               <p class="products-sale">30500 Р.</p>
               <a class="products-buy-button button" href="#">25 500 Р.</a>
             </li>
             <li class="products-item">
-              <a class="products-link" href="#">
-                <h3 class="products-item-heading">Перфоратор BOSCH BFG 2000</h3>
-                <img class="products-image" src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <a href="#">
+                <h3>Перфоратор BOSCH BFG 2000</h3>
+                <img src="img/Perforator_3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               </a>
               <a class="products-buy-button button" href="#">12500 Р.</a>
             </li>
@@ -158,35 +160,51 @@
         </section>
 
         <section class="manufacturers"> 
-          <p class="manufacturers-inner">
-            <h2 class="manufacturers-heading">Популярные производители</h2>
-            <a class="manufacturers-button" href="#">Все производители</a>
-          </p>
+          <div class="popular-manufacturers">
+            <h2>Популярные производители:</h2>
+            <a class="button" href="#">Все производители</a>
+          </div>
 
           <ul class="manufacturers-list">
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#"><img class="manufacturers-img" src="img/bosch.png" width="126" height="37" alt="Bosch"></a>
+              <a href="#">
+                <img src="img/bosch.png" width="126" height="37" alt="Bosch">
+              </a>
             </li>
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#"><img class="manufacturers-img" src="img/Makita.png" width="123" height="40" alt="Makita"></a>
+              <a href="#">
+                <img src="img/Makita.png" width="123" height="40" alt="Makita">
+              </a>
             </li>
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#"><img class="manufacturers-img" src="img/DeWALT.png" width="146" height="44" alt="DeWault"></a>
+              <a href="#">
+                <img src="img/DeWALT.png" width="146" height="44" alt="DeWault">
+              </a>
             </li>
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#"><img class="manufacturers-img" src="img/interscol.png" width="200" height="88" alt="Интерскол"></a>
+              <a href="#">
+                <img src="img/interscol.png" width="200" height="88" alt="Интерскол">
+              </a>
             </li>
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#"><img class="manufacturers-img" src="img/Hitachi.png" width="169" height="31" alt="Hitachi"></a>
+              <a href="#">
+                <img src="img/Hitachi.png" width="169" height="31" alt="Hitachi">
+              </a>
             </li>
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#"><img class="manufacturers-img" src="img/LG.png" width="121" height="73" alt="LG"></a>
+              <a href="#">
+                <img src="img/LG.png" width="121" height="73" alt="LG">
+              </a>
             </li>
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#"><img class="manufacturers-img" src="img/AEG.png" width="151" height="96" alt="AEG"></a>
+              <a href="#">
+                <img src="img/AEG.png" width="151" height="96" alt="AEG">
+              </a>
             </li>
             <li class="manufacturers-item">
-              <a class="manufacturers-link" href="#"><img class="manufacturers-img" src="img/Metabo.png" width="204" height="69" alt="metabo"></a>
+              <a href="#">
+                <img src="img/Metabo.png" width="204" height="69" alt="metabo">
+              </a>
             </li>
           </ul>
         </section>
@@ -199,7 +217,7 @@
           </p>
           <ul class="services-list">
             <li class="services-item active">
-              <input type="radio" name="services-radio" id="services-delivery"></input>
+              <input type="radio" name="services-radio" id="services-delivery" checked></input>
               <label for="services-delivery">Доставка</label>
             </li>
             <li class="services-item">
