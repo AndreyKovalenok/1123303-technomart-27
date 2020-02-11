@@ -226,11 +226,8 @@ a {
     flex-direction: column;
     justify-content: space-between;
 
+    width: 270px;
     min-height: 68px;
-}
-
-.header-info .header-info__login {
-    display: flex;
 }
 
 .header-contacts .header-contacts__phone {
@@ -256,26 +253,23 @@ a {
 }
 
 .header-login {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+    width: 281px;
     min-height: 68px;
 }
 
 .header-login .header-login__authorization {
+    display: inline-block;
+    vertical-align: top;
+
     width: 121px;
-
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .header-login .header-login__registration {
+    display: inline-block;
+    vertical-align: top;
+
     width: 150px;
-}
-
-.header-login .header-login__authorization,
-.header-login .header-login__registration {
-    margin-top: -24px;
 }
 
 .header-login .header-login__authorization,
@@ -359,16 +353,47 @@ a {
     color: #ffffff;
 }
 
+.categories {
+    padding-top: 60px;
+    padding-bottom: 33px;
+}
+
+.categories .wrap {
+    position: relative;
+}
+
 .categories h3 {
     margin: 0;
     padding: 0;
 }
 
 .categories .categories__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
     list-style: none;
 
     margin: 0;
     padding: 0;
+}
+
+.categories-item {
+    width: 300px;
+    min-height: 123px;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.categories-item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.categories-item {
+    margin-bottom: 20px;
 }
 
 .categories-item:first-child {
@@ -387,7 +412,7 @@ a {
     background-color: #8ed78f;
 }
 
-.categories__item:nth-child(5) {
+.categories__item:nth-child(6) {
     background-color: #ffc047;
 }
 
@@ -412,6 +437,19 @@ a {
 
 .categories-item .categories-item__link:active {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+
+    width: 620px;
+    height: 266px;
+}
+
+.slider-item {
+    height: 266px;
 }
 
 .slider-item:first-child {
@@ -448,7 +486,12 @@ a {
 
 /* ===== products ===== */
 .popular {
+    display: flex;
+    justify-content: space-between ;
+
     background-color: #f9f5f0;
+
+    min-height: 89px;
 }
 
 .popular .popular__heading {
@@ -464,16 +507,26 @@ a {
 }
 
 .products .products__list {
+    display: flex;
+    flex-wrap: wrap;
+
     font-family: 'PT sans', sans-serif;
     font-weight: bold;
 
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 20px;
 }
 
 .products .products__item {
+    width: 220px;
+    min-height: 317px;
+
     border: 1px solid #eaeaea;
+}
+
+.products .products__item:not(:last-child) {
+    margin-right: 20px;
 }
 
 .products-item .products-item__heading {
@@ -568,14 +621,24 @@ a {
 
 /* ===== manufacturers ===== */
 .manufacturers .manufacturers__list {
+    display: flex;
+    flex-wrap: wrap;
+
     list-style: none;
 
     margin: 0;
-    padding: 0;
+    padding: 20px 0 65px;
 }
 
 .manufacturers .manufacturers__item {
+    width: 220px;
+    margin-bottom: 20px;
+
     border: 1px solid #eaeaea;
+}
+
+.manufacturers .manufacturers__item:not(:nth-child(4n + 4)) {
+    margin-right: 20px;
 }
 /* ===== /manufacturers ===== */
 
@@ -834,6 +897,8 @@ a {
 }
 
 .filter .filter__heading {
+    min-height: 38px;
+
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
@@ -845,7 +910,7 @@ a {
 
 .filter .filter__heading,
 .fieldset-price .fieldset-price__range,
-.fieldset-price .fieldset-price__input {
+.fieldset-price .fieldset-price__value {
     background-color: #f7f3ec;
 }
 
@@ -863,8 +928,47 @@ a {
     padding: 0;
 }
 
+.filter-form .filter-form__fieldset:first-of-type {
+    margin-bottom: 26px;
+}
+
+.filter-form .filter-form__fieldset:nth-of-type(2) {
+    margin-bottom: 22px;
+}
+
+.filter-form .filter-form__fieldset:last-of-type{
+    margin-bottom: 76px;
+}
+
 .fieldset-manufacturers {
     min-height: 262px;
+}
+
+.fieldset-price .fieldset-price__legend {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fieldset-price .fieldset-price__range {
+    width: 220px;
+    min-height: 80px;
+    margin-bottom: 9px;
+}
+
+.fieldset-price .fieldset-price__value {
+    display: inline-block;
+}
+
+.fieldset-price__value.min {
+    margin-right: 25px;
+}
+
+.fieldset-price .fieldset-price__input {
+    width: 95px;
+    min-height: 38px;
+
+    border: none;
+    background-color: transparent;
 }
 
 .fieldset-price .fieldset-price__legend,
@@ -928,6 +1032,7 @@ a {
     line-height: 18px;
     font-weight: normal;
 
+    min-height: 38px;
     margin: 0;
     padding: 0;
 }
@@ -1056,15 +1161,23 @@ a {
 /* ===== /catalog-pagination ===== */ 
 
 /* ===== catalog-description ===== */ 
+.catalog-description {
+    background-color: #f2f6f8;
+
+    padding-top: 68px;
+    padding-bottom: 73px;
+}
+
 .catalog-description .catalog-description__headin {
     font-family: 'Cuprum', sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
     text-transform: uppercase;
-
+    
     margin: 0;
     padding: 0;
+    margin-bottom: 41px;
 }
 
 .catalog-description .catalog-description__text {
