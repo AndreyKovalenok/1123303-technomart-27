@@ -50,6 +50,7 @@
             <a class="header-menu__btn" href="#">Оформить заказ</a>
           </div>
         </div>
+
         <div class="wrap">
           <div class="header__info header-info">
             <h1 class="header-info__heading">
@@ -59,7 +60,7 @@
             </h1>
   
             <div class="header-info__contacts header-contacts">
-              <span class="header-contacts__phone">+7 (812) 555-05-55</span>
+              <a href="tel:+78125550555" class="header-contacts__phone">+7 (812) 555-05-55</a href="tel:+78125550555">
               <span class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
             
@@ -125,7 +126,7 @@
 
             <div class="categories__inner wrap">
               <div class="categories__slider slider">
-                <div class="slider__item slider-item">
+                <div class="slider__item slider-item" data-slide="1">
                   <div class="slider-item__inner">
                     <h3 class="slider-item__heading">Перфораторы</h3>
                     <span class="slider-item__text">Настоящие мужские игрушки</span>
@@ -133,7 +134,7 @@
                   <a class="slider-item__link button" href="catalog.html">Открыть каталог</a>
                 </div>
   
-                <div class="slider__item slider-item active">
+                <div class="slider__item slider-item active" data-slide="2">
                   <div class="slider-item__inner">
                     <h3 class="slider-item__heading">Дрели</h3>
                     <span class="slider-item__text">Соседям на радость</span>
@@ -145,8 +146,8 @@
                 <button class="slider__btn-right" type="button"></button>
 
                 <div class="slider__dots">
-                  <button type="button" class="slider__dot"></button>
-                  <button type="button" class="slider__dot active"></button>
+                  <button type="button" class="slider__dot" data-dot="1"></button>
+                  <button type="button" class="slider__dot active" data-dot="2"></button>
                 </div>
               </div>
 
@@ -287,12 +288,12 @@
             </p>
 
             <ul class="services__list">
-              <li class="services__item active">Доставка</li>
-              <li class="services__item">Гарантия</li>
-              <li class="services__item">Кредит</li>
+              <li class="services__item active" data-tab="1">Доставка</li>
+              <li class="services__item" data-tab="2">Гарантия</li>
+              <li class="services__item" data-tab="3">Кредит</li>
             </ul>
 
-            <div class="services__tab services-tab active">
+            <div class="services__tab services-tab active" data-tab="1">
               <h3 class="services-tab__heading">Доставка</h3>
               <p class="services-tab__text text">
                 Мы с удовольствием доставим ваш товар прямо <br>
@@ -301,7 +302,7 @@
                 поднимая его на ваш этаж!
               </p>
             </div>
-            <div class="services__tab services-tab">
+            <div class="services__tab services-tab" data-tab="2">
               <h3 class="services-tab__heading">Гарантия</h3>
               <p class="services-tab__text text">
                 Если купленный у нас товар поломается или заискрит, <br>
@@ -311,7 +312,7 @@
                 Дом уж восстановите как-нибудь сами.
               </p>
             </div>
-            <div class="services__tab services-tab">
+            <div class="services__tab services-tab" data-tab="3">
               <h3 class="services-tab__heading">Кредит</h3>
               <p class="services-tab__text text">
                 Залезть в долговую яму стало проще! <br>
@@ -459,7 +460,7 @@
 
               <div class="writeus-popup__item">
                 <label class="writeus-popup__label" for="write-us-message">Текст письма:</label>
-                <textarea class="writeus-popup__input message" name="message" id="write-us-message" cols="30" rows="5">В свободной форме</textarea>
+                <textarea class="writeus-popup__input message" name="message" id="write-us-message" cols="30" rows="5" placeholder="В свободной форме"></textarea>
                 <!-- <input class="writeus-popup__input message" type="text" name="message" placeholder="В свободной форме" id="write-us-message"> -->
               </div>
             </div>
@@ -480,5 +481,19 @@
         <img class="map-popup__img" src="img/big-map.jpg" width="940" height="446" alt="Как до нас добраться">
         <button class="map-popup__close close" type="button">Закрыть</button>
       </section>
+
+      <section class="add-popup">
+        <h2 class="add-popup__heading">Товар добавлен в корзину!</h2>
+        <div class="add-inner">
+          <a class="add-popup__link button" href="#">Оформить заказ</a>
+          <button class="add-popup__btn" type="button">Продолжить покупки</button>
+        </div>
+        <button class="add-popup__close" type="button">Закрыть</button>
+      </section>
+
+      <script src="/js/script.js"></script>
+      <script src="/js/write-us.js"></script>
+      <script src="/js/services.js"></script>
+      <script src="/js/slider.js"></script>
   </body>
 </html>
