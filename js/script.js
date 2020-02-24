@@ -37,5 +37,23 @@ continueShoppingBtn.addEventListener('click', function(evt) {
     popup.classList.remove('add-product-show');
 });
 
+let openMapBtn  = document.querySelector('.company-contacts__map');
+let mapPopup    = document.querySelector('.map-popup');
+let mapClose    = document.querySelector('.map-popup__close');
 
+openMapBtn.addEventListener('click', function(evt) {
+    mapPopup.classList.add('map-show');
+});
 
+mapClose.addEventListener('click', function(evt) {
+    mapPopup.classList.remove('map-show');  
+});
+
+window.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (mapPopup.classList.contains('map-show')) {
+            mapPopup.classList.remove('map-show');
+        }
+    }
+});

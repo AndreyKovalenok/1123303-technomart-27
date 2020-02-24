@@ -234,7 +234,7 @@ img {
 }
 
 .header-menu .header-menu__bookmarks {
-        padding-left: 44px;
+        padding-left: 20px;
 }
 
 .header-bookmarks::after {
@@ -280,7 +280,7 @@ img {
 }
 
 .header-menu .header-menu__basket {
-    padding-left: 49px;
+    padding-left: 22px;
 }
 
 .header-search .header-search__field:hover,
@@ -1495,6 +1495,7 @@ img {
 
 .company-contacts .company-contacts__map {
     margin-bottom: 38px;
+    cursor: pointer;
 }
 
 .company-contacts .company-contacts__text {
@@ -2539,6 +2540,8 @@ img {
 
 /* ===== map-popup ===== */
 .map-popup {
+    display: none;
+
     position: fixed;
     top: 50%;
     left: 50%;
@@ -2551,10 +2554,25 @@ img {
     box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
 }
 
+.map-popup iframe {
+    position: relative;
+    z-index: 2;
+
+    border: none;
+}
+
+.map-popup .map-popup__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
 .map-popup .map-popup__close {
     position: absolute;
     top: 9px;
     right: 9px;
+    z-index: 3;
 
     font-size: 0;
 
@@ -2669,11 +2687,7 @@ img {
     background-position: 0 0;
     background-repeat: no-repeat;
 }
-/* ===== /add-popup ===== */
-
-.map-popup {
-    display: none; 
-} 
+/* ===== /add-popup ===== */ 
 
 .writeus-show {
     display: block;
@@ -2703,7 +2717,7 @@ img {
     }
   }
 
-  @keyframes shake {
+@keyframes shake {
     0%,
     100% {
       transform: translateX(0);
@@ -2725,8 +2739,14 @@ img {
     }
   }
 
-  .add-product-show {
-      display: block;
+.add-product-show {
+    display: block;
 
-      animation: bounce 0.6s;
-  }
+    animation: bounce 0.6s;
+}
+
+.map-show {
+    display: block;
+
+    animation: bounce 0.6s;
+}
