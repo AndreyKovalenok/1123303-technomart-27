@@ -809,14 +809,15 @@ img {
     display: none;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #000000;
 }
 
 .slider-item:first-child {
+    background-color: #93816f;
     background-image: url(../img/slide1.jpg);
 }
 
 .slider-item:nth-child(2) {
+    background-color: #6a594b;
     background-image: url(../img/slide2.jpg);
 }
 
