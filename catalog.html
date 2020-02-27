@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог</title>
 </head>
+
 <body>
   <header class="header">
     <div class="header__menu header-menu">
       <div class="wrap">
-        <a class="header-menu__logo header-menu--logo logo" href="#">
+        <a class="header-menu__logo header-menu--logo logo" href="index.html">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="109" height="19" viewBox="0 0 136.5 21.59">
             <defs>
               <style>
@@ -42,7 +43,7 @@
           <span class="header-bookmarks__count">0</span>
         </a>
 
-        <a class="header-menu__basket header-basket" href="#">
+        <a class="header-menu__basket header-basket active" href="#">
           <span class="header-basket__text">Корзина:</span>
           <span class="header-basket__count">10</span>
         </a>
@@ -54,7 +55,7 @@
     <div class="wrap">
       <div class="header__info header-info">
         <h1 class="header-info__heading">
-          Интернет-магазин <br>
+          Интернет-магазин
           строительных материалов <br> 
           и инструментов для ремонта
         </h1>
@@ -124,18 +125,18 @@
         <h2 class="catalog-breadcrumbs__heading visually-hidden">Текущий путь</h2>
 
         <ul class="catalog-breadcrumbs__list">
-            <li class="catalog-breadcrumbs__item">
-              <a class="catalog-breadcrumbs__link" href="index.html"></a>
-            </li>
-            <li class="catalog-breadcrumbs__item">
-              <a class="catalog-breadcrumbs__link" href="#">Каталог</a>
-            </li>
-            <li class="catalog-breadcrumbs__item">
-              <a class="catalog-breadcrumbs__link" href="#">Инструмент</a>
-            </li>
-            <li class="catalog-breadcrumbs__item current">
-              Перфараторы
-            </li>
+          <li class="catalog-breadcrumbs__item">
+            <a class="catalog-breadcrumbs__link" href="index.html"></a>
+          </li>
+          <li class="catalog-breadcrumbs__item">
+            <a class="catalog-breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="catalog-breadcrumbs__item">
+            <a class="catalog-breadcrumbs__link" href="#">Инструмент</a>
+          </li>
+          <li class="catalog-breadcrumbs__item current">
+            Перфараторы
+          </li>
         </ul>
       </section>
   
@@ -160,50 +161,50 @@
           </fieldset>
   
           <fieldset class="filter-form__fieldset fieldset-manufacturers">
-              <legend class="fieldset-manufacturers__legend">Производители:</legend>
-              <ul class="fieldset-manufacturers__list">
-                <li class="fieldset-manufacturers__item">
-                  <input class="fieldset-manufacturers__input" type="checkbox" name="Bosch" value="bosch" id="filter-bosch" checked>
-                  <span class="fieldset-manufacturers__box"></span>
-                  <label class="fieldset-manufacturers__label" for="filter-bosch">Bosch</label>
-                </li>
-                <li class="fieldset-manufacturers__item">
-                  <input class="fieldset-manufacturers__input" type="checkbox" name="interscol" value="interscol" id="filter-interscol">
-                  <span class="fieldset-manufacturers__box"></span>
-                  <label class="fieldset-manufacturers__label" for="filter-interscol">ИНТЕРСКОЛ</label>
-                </li>
-                <li class="fieldset-manufacturers__item">
-                  <input class="fieldset-manufacturers__input" type="checkbox" name="makita" value="makita" id="filter-makita" checked>
-                  <span class="fieldset-manufacturers__box"></span>
-                  <label class="fieldset-manufacturers__label" for="filter-makita">Makita</label>
-                </li>
-                <li class="fieldset-manufacturers__item">
-                  <input class="fieldset-manufacturers__input" type="checkbox" name="dewalt" value="dewalt" id="filter-dewalt">
-                  <span class="fieldset-manufacturers__box"></span>
-                  <label class="fieldset-manufacturers__label" for="filter-dewalt">Dewalt</label>
-                </li>
-                <li class="fieldset-manufacturers__item">
-                  <input class="fieldset-manufacturers__input" type="checkbox" name="hitach" value="hitach" id="filter-hitach">
-                  <span class="fieldset-manufacturers__box"></span>
-                  <label class="fieldset-manufacturers__label" for="filter-hitach">Hitachi</label>
-                </li>
-              </ul>
+            <legend class="fieldset-manufacturers__legend">Производители:</legend>
+            <ul class="fieldset-manufacturers__list">
+              <li class="fieldset-manufacturers__item">
+                <input class="fieldset-manufacturers__input" type="checkbox" name="Bosch" value="bosch" id="filter-bosch" checked>
+                <span class="fieldset-manufacturers__box"></span>
+                <label class="fieldset-manufacturers__label" for="filter-bosch">Bosch</label>
+              </li>
+              <li class="fieldset-manufacturers__item">
+                <input class="fieldset-manufacturers__input" type="checkbox" name="interscol" value="interscol" id="filter-interscol">
+                <span class="fieldset-manufacturers__box"></span>
+                <label class="fieldset-manufacturers__label" for="filter-interscol">ИНТЕРСКОЛ</label>
+              </li>
+              <li class="fieldset-manufacturers__item">
+                <input class="fieldset-manufacturers__input" type="checkbox" name="makita" value="makita" id="filter-makita" checked>
+                <span class="fieldset-manufacturers__box"></span>
+                <label class="fieldset-manufacturers__label" for="filter-makita">Makita</label>
+              </li>
+              <li class="fieldset-manufacturers__item">
+                <input class="fieldset-manufacturers__input" type="checkbox" name="dewalt" value="dewalt" id="filter-dewalt">
+                <span class="fieldset-manufacturers__box"></span>
+                <label class="fieldset-manufacturers__label" for="filter-dewalt">Dewalt</label>
+              </li>
+              <li class="fieldset-manufacturers__item">
+                <input class="fieldset-manufacturers__input" type="checkbox" name="hitach" value="hitach" id="filter-hitach">
+                <span class="fieldset-manufacturers__box"></span>
+                <label class="fieldset-manufacturers__label" for="filter-hitach">Hitachi</label>
+              </li>
+            </ul>
           </fieldset>
   
           <fieldset class="filter-form__fieldset filedset-power">
-              <legend class="filedset-power__legend">Питание:</legend>
-              <ul class="filedset-power__list">
-                <li class="filedset-power__item">
-                  <input class="filedset-power__input" type="radio" name="feed" value="battery" id="filter-battery" checked>
-                  <span class="filedset-power__box"></span>
-                  <label class="filedset-power__label" for="filter-battery">Аккумуляторные</label>
-                </li>
-                <li class="filedset-power__item">
-                  <input class="filedset-power__input" type="radio" name="feed" value="light" id="filter-light" checked>
-                  <span class="filedset-power__box"></span>
-                  <label class="filedset-power__label" for="filter-light">Световые</label>
-                </li>
-              </ul>
+            <legend class="filedset-power__legend">Питание:</legend>
+            <ul class="filedset-power__list">
+              <li class="filedset-power__item">
+                <input class="filedset-power__input" type="radio" name="feed" value="battery" id="filter-battery" checked>
+                <span class="filedset-power__box"></span>
+                <label class="filedset-power__label" for="filter-battery">Аккумуляторные</label>
+              </li>
+              <li class="filedset-power__item">
+                <input class="filedset-power__input" type="radio" name="feed" value="light" id="filter-light" checked>
+                <span class="filedset-power__box"></span>
+                <label class="filedset-power__label" for="filter-light">Световые</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="filter-form__btn" type="submit">Показать</button>
         </form>
@@ -213,43 +214,43 @@
         <section class="catalog-page__sort sort">
           <h2 class="sort__heading">Сортировка:</h2>
   
-            <form class="sort__form sort-form" action="#" method="GET">
-              <fieldset class="sort-form__fieldset fieldset-type">
-                <ul class="fieldset-type__list">
-                  <li class="fieldset-type__item">
-                    <input class="fieldset-type__input" type="radio" name="sort-type" value="price" id="sort-price" checked>
-                    <label class="fieldset-type__label active" for="sort-price">По цене</label>
-                  </li>
-                  <li class="fieldset-type__item">
-                    <input class="fieldset-type__input" type="radio" name="sort-type" value="type" id="sort-type">
-                    <label class="fieldset-type__label " for="sort-type">По типу</label>
-                  </li>
-                  <li class="fieldset-type__item">
-                    <input class="fieldset-type__input" type="radio" name="sort-type" value="func" id="sort-func">
-                    <label class="fieldset-type__label " for="sort-func">По функционалу</label>
-                  </li>
-                </ul>
-              </fieldset>
+          <form class="sort__form sort-form" action="#" method="GET">
+            <fieldset class="sort-form__fieldset fieldset-type">
+              <ul class="fieldset-type__list">
+                <li class="fieldset-type__item">
+                  <input class="fieldset-type__input" type="radio" name="sort-type" value="price" id="sort-price" checked>
+                  <label class="fieldset-type__label active" for="sort-price">По цене</label>
+                </li>
+                <li class="fieldset-type__item">
+                  <input class="fieldset-type__input" type="radio" name="sort-type" value="type" id="sort-type">
+                  <label class="fieldset-type__label " for="sort-type">По типу</label>
+                </li>
+                <li class="fieldset-type__item">
+                  <input class="fieldset-type__input" type="radio" name="sort-type" value="func" id="sort-func">
+                  <label class="fieldset-type__label " for="sort-func">По функционалу</label>
+                </li>
+              </ul>
+            </fieldset>
   
-              <fieldset class="sort-form__fieldset fieldset-growth">
-                <ul class="fieldset-growth__list">
-                  <li class="fieldset-growth__item">
-                    <label class="fieldset-growth__label visually-hidden" for="growth-increase">По возрастанию</label>
-                    <input class="fieldset-growth__input" type="radio" name="growth" value="increase" id="growth-increase">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                      <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-                    </svg>
-                  </li>
-                  <li class="fieldset-growth__item">
-                    <label class="fieldset-growth__label visually-hidden" for="growth-decrease">По убиыванию</label>
-                    <input class="fieldset-growth__input" type="radio" name="growth" value="decrease" id="growth-decrease">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                      <path fill="#231F20" d="M5.5 10L0 0h11"/>
-                    </svg>
-                  </li>
-                </ul>
-              </fieldset>
-            </form>
+            <fieldset class="sort-form__fieldset fieldset-growth">
+              <ul class="fieldset-growth__list">
+                <li class="fieldset-growth__item">
+                  <label class="fieldset-growth__label visually-hidden" for="growth-increase">По возрастанию</label>
+                  <input class="fieldset-growth__input" type="radio" name="growth" value="increase" id="growth-increase" checked>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </li>
+                <li class="fieldset-growth__item">
+                  <label class="fieldset-growth__label visually-hidden" for="growth-decrease">По убиыванию</label>
+                  <input class="fieldset-growth__input" type="radio" name="growth" value="decrease" id="growth-decrease">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                  </svg>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
         </section>
     
         <section class="catalog-page__products catalog-products">
@@ -398,93 +399,94 @@
           <h2 class="catalog-description__headin">Пара слов о перфораторах</h2>
   
           <p class="catalog-description__text text">
-              Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
-              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-              В <br> ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
       </section>
   </main>
 
   <footer class="footer">
-        <div class="footer__top footer-top">
-          <div class="wrap">
-            <div class="footer-top__inner">
-              <a class="footer-top__logo logo" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="138" height="22" viewBox="0 0 136.5 21.59">
-                  <defs>
-                    <style>
-                      .cls-1 {
-                        fill: #fff;
-                        fill-rule: evenodd;
-                      }
-                    </style>
-                  </defs>
-                  <path d="M131.694,2.397 L131.694,21.297 L128.994,21.297 L128.994,2.397 L124.194,2.397 L124.194,0.297 L136.494,0.297 L136.494,2.397 L131.694,2.397 ZM121.299,13.512 C120.829,14.102 120.239,14.522 119.529,14.772 C118.819,15.022 117.974,15.147 116.994,15.147 C116.534,15.147 116.014,15.117 115.434,15.057 C114.854,14.997 114.374,14.927 113.994,14.847 L113.994,21.297 L111.294,21.297 L111.294,0.597 C112.054,0.377 112.819,0.222 113.589,0.132 C114.359,0.042 115.194,-0.003 116.094,-0.003 C117.294,-0.003 118.314,0.122 119.154,0.372 C119.994,0.622 120.674,1.037 121.194,1.617 C121.714,2.197 122.094,2.967 122.334,3.927 C122.574,4.887 122.694,6.077 122.694,7.497 C122.694,8.957 122.579,10.177 122.349,11.157 C122.119,12.137 121.769,12.922 121.299,13.512 ZM119.769,4.797 C119.619,4.077 119.384,3.507 119.064,3.087 C118.744,2.667 118.339,2.372 117.849,2.202 C117.359,2.032 116.774,1.947 116.094,1.947 L113.994,1.947 L113.994,13.047 L116.094,13.047 C116.774,13.047 117.359,12.962 117.849,12.792 C118.339,12.622 118.744,12.327 119.064,11.907 C119.384,11.487 119.619,10.917 119.769,10.197 C119.919,9.477 119.994,8.577 119.994,7.497 C119.994,6.417 119.919,5.517 119.769,4.797 ZM104.544,15.897 L98.544,15.897 L97.194,21.297 L94.494,21.297 L99.594,0.297 L103.494,0.297 L108.594,21.297 L105.894,21.297 L104.544,15.897 ZM101.604,3.297 L101.484,3.297 L98.994,13.797 L104.094,13.797 L101.604,3.297 ZM88.644,5.697 L88.494,5.697 L84.144,18.597 L81.444,18.597 L77.094,5.697 L76.944,5.697 L76.044,21.297 L73.344,21.297 L74.544,0.297 L77.844,0.297 L82.734,14.697 L82.854,14.697 L87.744,0.297 L91.044,0.297 L92.244,21.297 L89.544,21.297 L88.644,5.697 ZM68.484,19.347 C67.924,20.167 67.249,20.747 66.459,21.087 C65.669,21.427 64.764,21.597 63.744,21.597 C62.724,21.597 61.819,21.427 61.029,21.087 C60.239,20.747 59.564,20.167 59.004,19.347 C58.444,18.527 58.019,17.422 57.729,16.032 C57.439,14.642 57.294,12.897 57.294,10.797 C57.294,8.697 57.439,6.952 57.729,5.562 C58.019,4.172 58.444,3.067 59.004,2.247 C59.564,1.427 60.239,0.847 61.029,0.507 C61.819,0.167 62.724,-0.003 63.744,-0.003 C64.764,-0.003 65.669,0.167 66.459,0.507 C67.249,0.847 67.924,1.427 68.484,2.247 C69.044,3.067 69.469,4.172 69.759,5.562 C70.049,6.952 70.194,8.697 70.194,10.797 C70.194,12.897 70.049,14.642 69.759,16.032 C69.469,17.422 69.044,18.527 68.484,19.347 ZM67.179,6.357 C66.969,5.197 66.694,4.277 66.354,3.597 C66.014,2.917 65.614,2.447 65.154,2.187 C64.694,1.927 64.224,1.797 63.744,1.797 C63.264,1.797 62.794,1.927 62.334,2.187 C61.874,2.447 61.474,2.917 61.134,3.597 C60.794,4.277 60.519,5.197 60.309,6.357 C60.099,7.517 59.994,8.997 59.994,10.797 C59.994,12.597 60.099,14.077 60.309,15.237 C60.519,16.397 60.794,17.317 61.134,17.997 C61.474,18.677 61.874,19.147 62.334,19.407 C62.794,19.667 63.264,19.797 63.744,19.797 C64.224,19.797 64.694,19.667 65.154,19.407 C65.614,19.147 66.014,18.677 66.354,17.997 C66.694,17.317 66.969,16.397 67.179,15.237 C67.389,14.077 67.494,12.597 67.494,10.797 C67.494,8.997 67.389,7.517 67.179,6.357 ZM50.994,11.697 L44.694,11.697 L44.694,21.297 L41.994,21.297 L41.994,0.297 L44.694,0.297 L44.694,9.597 L50.994,9.597 L50.994,0.297 L53.694,0.297 L53.694,21.297 L50.994,21.297 L50.994,11.697 ZM36.745,21.297 L32.995,12.297 L29.245,21.297 L26.545,21.297 L31.045,10.497 L26.995,0.297 L29.695,0.297 L32.995,8.697 L36.295,0.297 L38.995,0.297 L34.945,10.497 L39.445,21.297 L36.745,21.297 ZM14.695,0.297 L24.895,0.297 L24.895,2.397 L17.395,2.397 L17.395,9.297 L23.995,9.297 L23.995,11.397 L17.395,11.397 L17.395,19.197 L24.895,19.197 L24.895,21.297 L14.695,21.297 L14.695,0.297 ZM7.495,21.297 L4.795,21.297 L4.795,2.397 L-0.005,2.397 L-0.005,0.297 L12.295,0.297 L12.295,2.397 L7.495,2.397 L7.495,21.297 Z" class="cls-1"/>
-                </svg>
-              </a>
-              <p class="footer-top__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55</p>
-            </div>
-  
-            <ul class="footer-top__list">
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="#">Компания</a>
-              </li>
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="#">Новости</a>
-              </li>
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="catalog.html">Каталог</a>
-              </li>
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="#">Доставка</a>
-              </li>
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="#">Контакты</a>
-              </li>
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="#">Материалы</a>
-              </li>
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="#">Техника</a>
-              </li>
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="#">Инструмент</a>
-              </li>
-              <li class="footer-top__item">
-                <a class="footer-top__link" href="#">Спецпредложения</a>
-              </li>
-            </ul>
-          </div>
+    <div class="footer__top footer-top">
+      <div class="wrap">
+        <div class="footer-top__inner">
+          <a class="footer-top__logo logo" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="138" height="22" viewBox="0 0 136.5 21.59">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path d="M131.694,2.397 L131.694,21.297 L128.994,21.297 L128.994,2.397 L124.194,2.397 L124.194,0.297 L136.494,0.297 L136.494,2.397 L131.694,2.397 ZM121.299,13.512 C120.829,14.102 120.239,14.522 119.529,14.772 C118.819,15.022 117.974,15.147 116.994,15.147 C116.534,15.147 116.014,15.117 115.434,15.057 C114.854,14.997 114.374,14.927 113.994,14.847 L113.994,21.297 L111.294,21.297 L111.294,0.597 C112.054,0.377 112.819,0.222 113.589,0.132 C114.359,0.042 115.194,-0.003 116.094,-0.003 C117.294,-0.003 118.314,0.122 119.154,0.372 C119.994,0.622 120.674,1.037 121.194,1.617 C121.714,2.197 122.094,2.967 122.334,3.927 C122.574,4.887 122.694,6.077 122.694,7.497 C122.694,8.957 122.579,10.177 122.349,11.157 C122.119,12.137 121.769,12.922 121.299,13.512 ZM119.769,4.797 C119.619,4.077 119.384,3.507 119.064,3.087 C118.744,2.667 118.339,2.372 117.849,2.202 C117.359,2.032 116.774,1.947 116.094,1.947 L113.994,1.947 L113.994,13.047 L116.094,13.047 C116.774,13.047 117.359,12.962 117.849,12.792 C118.339,12.622 118.744,12.327 119.064,11.907 C119.384,11.487 119.619,10.917 119.769,10.197 C119.919,9.477 119.994,8.577 119.994,7.497 C119.994,6.417 119.919,5.517 119.769,4.797 ZM104.544,15.897 L98.544,15.897 L97.194,21.297 L94.494,21.297 L99.594,0.297 L103.494,0.297 L108.594,21.297 L105.894,21.297 L104.544,15.897 ZM101.604,3.297 L101.484,3.297 L98.994,13.797 L104.094,13.797 L101.604,3.297 ZM88.644,5.697 L88.494,5.697 L84.144,18.597 L81.444,18.597 L77.094,5.697 L76.944,5.697 L76.044,21.297 L73.344,21.297 L74.544,0.297 L77.844,0.297 L82.734,14.697 L82.854,14.697 L87.744,0.297 L91.044,0.297 L92.244,21.297 L89.544,21.297 L88.644,5.697 ZM68.484,19.347 C67.924,20.167 67.249,20.747 66.459,21.087 C65.669,21.427 64.764,21.597 63.744,21.597 C62.724,21.597 61.819,21.427 61.029,21.087 C60.239,20.747 59.564,20.167 59.004,19.347 C58.444,18.527 58.019,17.422 57.729,16.032 C57.439,14.642 57.294,12.897 57.294,10.797 C57.294,8.697 57.439,6.952 57.729,5.562 C58.019,4.172 58.444,3.067 59.004,2.247 C59.564,1.427 60.239,0.847 61.029,0.507 C61.819,0.167 62.724,-0.003 63.744,-0.003 C64.764,-0.003 65.669,0.167 66.459,0.507 C67.249,0.847 67.924,1.427 68.484,2.247 C69.044,3.067 69.469,4.172 69.759,5.562 C70.049,6.952 70.194,8.697 70.194,10.797 C70.194,12.897 70.049,14.642 69.759,16.032 C69.469,17.422 69.044,18.527 68.484,19.347 ZM67.179,6.357 C66.969,5.197 66.694,4.277 66.354,3.597 C66.014,2.917 65.614,2.447 65.154,2.187 C64.694,1.927 64.224,1.797 63.744,1.797 C63.264,1.797 62.794,1.927 62.334,2.187 C61.874,2.447 61.474,2.917 61.134,3.597 C60.794,4.277 60.519,5.197 60.309,6.357 C60.099,7.517 59.994,8.997 59.994,10.797 C59.994,12.597 60.099,14.077 60.309,15.237 C60.519,16.397 60.794,17.317 61.134,17.997 C61.474,18.677 61.874,19.147 62.334,19.407 C62.794,19.667 63.264,19.797 63.744,19.797 C64.224,19.797 64.694,19.667 65.154,19.407 C65.614,19.147 66.014,18.677 66.354,17.997 C66.694,17.317 66.969,16.397 67.179,15.237 C67.389,14.077 67.494,12.597 67.494,10.797 C67.494,8.997 67.389,7.517 67.179,6.357 ZM50.994,11.697 L44.694,11.697 L44.694,21.297 L41.994,21.297 L41.994,0.297 L44.694,0.297 L44.694,9.597 L50.994,9.597 L50.994,0.297 L53.694,0.297 L53.694,21.297 L50.994,21.297 L50.994,11.697 ZM36.745,21.297 L32.995,12.297 L29.245,21.297 L26.545,21.297 L31.045,10.497 L26.995,0.297 L29.695,0.297 L32.995,8.697 L36.295,0.297 L38.995,0.297 L34.945,10.497 L39.445,21.297 L36.745,21.297 ZM14.695,0.297 L24.895,0.297 L24.895,2.397 L17.395,2.397 L17.395,9.297 L23.995,9.297 L23.995,11.397 L17.395,11.397 L17.395,19.197 L24.895,19.197 L24.895,21.297 L14.695,21.297 L14.695,0.297 ZM7.495,21.297 L4.795,21.297 L4.795,2.397 L-0.005,2.397 L-0.005,0.297 L12.295,0.297 L12.295,2.397 L7.495,2.397 L7.495,21.297 Z" class="cls-1"/>
+            </svg>
+          </a>
+          <p class="footer-top__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="footer-top__tel" href="tel:+7812550555">+7 (812) 555-05-55</a>
         </div>
 
-        <div class="footer__bottom footer-bottom">
-          <div class="wrap">
-            <p class="footer-bottom__copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
-  
-            <ul class="footer-bottom__society">
-              <li class="footer-bottom__item">
-                <a class="footer-bottom__link" href="#">Вконтакте</a>
-              </li>
-              <li class="footer-bottom__item">
-                <a class="footer-bottom__link" href="#">Фейсбук</a>
-              </li>
-              <li class="footer-bottom__item">
-                <a class="footer-bottom__link" href="#">Инстаграм</a>
-              </li>
-            </ul>
-  
-            <div class="footer-bottom__inner footer-dev">
-              <span class="footer-dev__text">Обратная связь:</span>
-              <a class="footer-dev__link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-  
-            <div class="footer-bottom__inner footer-dev">
-              <span class="footer-dev__text">Разработано - </span>
-              <a class="footer-dev__link" href="https://htmlacademy.ru">htmlacademy.ru</a>
-            </div>
-          </div>
-          </div>
+        <ul class="footer-top__list">
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Компания</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Новости</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Доставка</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Контакты</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Материалы</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Техника</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Инструмент</a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom footer-bottom">
+      <div class="wrap">
+        <p class="footer-bottom__copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
+
+        <ul class="footer-bottom__society">
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">Вконтакте</a>
+          </li>
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">Фейсбук</a>
+          </li>
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">Инстаграм</a>
+          </li>
+        </ul>
+
+        <div class="footer-bottom__feed-inner footer-dev">
+          <span class="footer-dev__text">Обратная связь:</span>
+          <a class="footer-dev__link" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+
+        <div class="footer-bottom__dev-inner footer-dev">
+          <span class="footer-dev__text">Разработано - </span>
+          <a class="footer-dev__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <section class="add-popup">
@@ -496,6 +498,6 @@
     <button class="add-popup__close" type="button">Закрыть</button>
   </section>
 
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
