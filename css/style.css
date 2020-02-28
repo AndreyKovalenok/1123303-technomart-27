@@ -37,12 +37,12 @@ img {
     border-bottom: 5px solid #b52933;
 }
 
-.logo:hover {
+.logo[href="index.html"]:hover {
     background-color: #ca2c37;
     border-bottom-color: #9a212a;
 }
 
-.logo:active {
+.logo[href="index.html"]:active {
     background-color: #ba2732;
     border-bottom-color: #8e1e26;
 }
@@ -937,6 +937,7 @@ img {
     color: #32425c;
     text-transform: uppercase;
 
+    max-width: 530px;
     margin: 0;
     padding: 0;
     padding-top: 5px;
@@ -944,7 +945,7 @@ img {
 
 .popular .popular__link {
     width: 253px;
-    min-height: 38px;
+    height: 38px;
     padding: 12px 50px 8px 50px;
     text-align: center;
 }
@@ -1005,6 +1006,8 @@ img {
 
 .products-item .products-item__sale,
 .products-item .products-item__btn {
+    display: block;
+
     font-size: 17px;
     line-height: 18px;
 
@@ -1015,7 +1018,7 @@ img {
     color: #a9a9a9;
     text-decoration: line-through;
 
-    margin-bottom: 10px;
+    margin-bottom: 68px;
     padding-left: 3px;
 }
 
@@ -1581,12 +1584,12 @@ img {
 }
 
 .catalog-page .catalog-page__sort {
-    max-height: 38px;
+    min-height: 38px;
     margin-bottom: 20px;
 }
 
 .catalog-page .catalog-page__products {
-    margin-bottom: 52px;
+    margin-bottom: 32px;
 }
 /* ===== /catalog-page ===== */
 
@@ -2026,7 +2029,6 @@ img {
 
     flex-basis: 221px;
     
-    min-height: 38px;
     margin: 0;
     padding: 0;
 }
@@ -2047,7 +2049,8 @@ img {
 .fieldset-growth .fieldset-growth__list {
     display: flex;
     justify-content: space-between;
-    flex-basis: 200px;
+    max-width: 355px;
+    flex-wrap: wrap;
 
     list-style: none;
 
@@ -2109,12 +2112,14 @@ img {
 
     width: 11px;
     height: 10px;
-
-    outline: none;
 }
 
 .fieldset-type__input:focus + .fieldset-type__label {
     outline: 2px solid lightblue;
+}
+
+.fieldset-growth__input:focus + svg {
+    outline: 2px solid lightblue;   
 }
 
 .fieldset-growth__item {
@@ -2149,7 +2154,7 @@ img {
     margin-right: 20px;
 }
 
-.catalog-products .catalog-products__item:not(:nth-child(n + 7)) {
+.catalog-products .catalog-products__item {
     margin-bottom: 20px;
 }
 /* ===== /catalog-products ===== */ 
@@ -2507,7 +2512,7 @@ img {
 
     width: 220px;
     height: 38px;
-    padding: 0 12px;
+    padding: 8px 12px;
 }
 
 .writeus-popup .writeus-popup__input::placeholder,
