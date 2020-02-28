@@ -481,7 +481,7 @@ img {
     background-color: #ffffff;
 
     width: 300px;
-    height: 46px;
+    min-height: 46px;
     margin-left: -20px;
     margin-bottom: 8px;
 }
@@ -489,10 +489,11 @@ img {
 .header-login__profile svg {
     position: absolute;
     left: 15px;
-    top: 14px;
+    top: 50%;
 
     width: 20px;
     height: 18px;
+    margin-top: -9px;
 }
 
 .header-login__profile:hover path {
@@ -506,12 +507,12 @@ img {
 .header-login__logout {
     position: absolute;
     right: 9px;
-    top: 15px;
+    top: 50%;
     
     width: 21px;
     height: 17px;
-
     padding: 0;
+    margin-top: -8px;
 
     border: none;
     background: none;
@@ -559,6 +560,7 @@ img {
     color: #000000;
 
     background-color: #ffffff;
+    overflow: hidden;
 
     min-height: 45px;
 }
@@ -2398,6 +2400,8 @@ img {
 .footer-bottom .footer-bottom__item::before {
     position: absolute;
     z-index: 1;
+
+    border-radius: 50%;
 }
 
 .footer-bottom .footer-bottom__item:first-child::before {
